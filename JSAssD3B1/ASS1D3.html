@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Various Methods in Console Function... </h1>
+</head>
+<body>
+    <h3>Console Object: <br></h3>
+    <p>&nbsp &nbsp &nbsp In Javascript, the console is an object which provides access 
+        to the browser debugging console.<br>
+        <h3>Different methods are...<br></h3>
+        <h4>1. Console.log()==></h4>&nbsp &nbsp &nbsp Mainly used to log(i.e., print) the output to the console. We can put any type inside the log(), 
+        be it a String, Array, Object, Boolean, etc.
+        <h4>2. Console.error()==></h4>&nbsp &nbsp &nbsp Used to log error message to the console. Useful in testing of code. By default
+        the error message will be highlighted with red color.<h4>3. Console.warn()==><br></h4>&nbsp &nbsp &nbsp Used to log warning message 
+        to the console. By default the warning message will be highlighted with yellow color.<h4>4. Console.clear()==></h4>
+        &nbsp &nbsp &nbsp Used to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will
+        be printed like: 'Console was cleared' while in firefox no message is returned.<h4>5. Console.time() and Console.timeEnd()==></h4>
+        &nbsp &nbsp &nbsp Whenever we want to know the amount of time spend by a block or a function, 
+        we can make use of the time() and timeEnd() methods provided by the Javascript console object.
+        <h4>6. Console.table()==></h4>&nbsp &nbsp &nbsp This method allows us to generate a table inside a console. 
+        The input must be an array or an object which will be shown as a table.<h4>7. Console.count()==></h4>&nbsp &nbsp &nbsp This method is 
+        used to count the number that the function hit by this counting method.<h4>8. Console.group() and Console.groupEnd()==></h4>
+        &nbsp &nbsp &nbsp group() and groupEnd() methods of the console object allows us to group contents
+        in a seperate block, which will be indented.<h4>9. Custom Console Logs ==></h4>&nbsp &nbsp &nbsp User can add Styling to 
+        the console logs in order to make logs Custom.
+    </p>
+    
+    <script>
+        
+        console.time('T');
+        let fun1 = function() {
+            console.log('fun1 is running.');
+        }
+        let fun2 = function() {
+            console. log('fun2 is running.')
+        }
+        fun1();
+        fun2();
+        console.timeEnd('T');
+        console.table({'a':1, 'b':2});
+        for(let i=0;i<5;i++) {
+            console.count(i);
+        }
+        console.group('Simple');
+        console.warn('Warning!');
+        console.error('Error Here...');
+        console.log('Tejal Badgujar');
+        console.groupEnd('Simple');
+        console.log('New Section...')
+        console.clear();
+
+    </script>
+</body>
+</html>

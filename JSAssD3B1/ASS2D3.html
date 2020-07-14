@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Difference of Var, Let and Const with example</h1>
+</head>
+<body>
+    <h4>Var  ==></h4>
+    <p>Var are used for variable declaration in Javascript. Var is function scoped. It can be said that variable with 
+        var is defined throughout the program as compared to let.</p>
+    <h4>Let  ==></h4>
+    <p>Let is used for variable declaration in Javascript. Let is a block scoped.</p>
+    <h4>Constant  ==></h4>
+    <p>The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. 
+       However if a variable is defined with keyword const, it cannot be reassigned. “const” cannot be re-assigned to a 
+       new value. However it CAN be mutated.</p>
+    <script>
+        
+        console.log(x);
+        var x = 6;
+        console.log(x);
+
+        console.log(x);
+        let x = 5;
+        console.log(x);
+
+        const countries = ["India","Russia","Iran","Canada"]
+        console.log(countries);
+
+    </script>      
+</body>
+</html>
